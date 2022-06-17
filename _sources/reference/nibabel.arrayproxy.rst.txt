@@ -1,0 +1,44 @@
+.. AUTO-GENERATED FILE -- DO NOT EDIT!
+
+:mod:`arrayproxy`
+=================
+.. automodule:: nibabel.arrayproxy
+
+.. currentmodule:: nibabel.arrayproxy
+.. autosummary::
+
+   ArrayProxy
+   get_obj_dtype
+   is_proxy
+   reshape_dataobj
+
+
+.. currentmodule:: nibabel.arrayproxy
+
+
+:class:`ArrayProxy`
+~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: ArrayProxy
+  :members:
+  :undoc-members:
+  :show-inheritance:
+
+  .. automethod:: __init__
+
+get_obj_dtype
+~~~~~~~~~~~~~
+
+.. autofunction:: get_obj_dtype
+
+is_proxy
+~~~~~~~~
+
+.. autofunction:: is_proxy
+
+reshape_dataobj
+~~~~~~~~~~~~~~~
+
+.. autofunction:: reshape_dataobj
+
