@@ -26,6 +26,8 @@ elif [ "${CHECK_TYPE}" == "test" ]; then
     cp ../.coveragerc .
     pytest --doctest-modules --doctest-plus --cov nibabel --cov-report xml \
         --junitxml=test-results.xml -v --pyargs nibabel
+elif [ "${CHECK_TYPE}" == "typing" ]; then
+    mypy nibabel
 else
     false
 fi
