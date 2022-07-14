@@ -593,10 +593,10 @@ class TrkFile(TractogramFile):
             if header_rec['version'] == 1:
                 # There is no 4x4 matrix for voxel to RAS transformation.
                 header_rec[Field.VOXEL_TO_RASMM] = np.zeros((4, 4))
-            elif header_rec['version'] == 2:
+            elif header_rec['version'] in (2, 3):
                 pass  # Nothing more to do.
             else:
-                raise HeaderError('NiBabel only supports versions 1 and 2 of '
+                raise HeaderError('NiBabel only supports versions 1, 2 and 3 of '
                                   'the Trackvis file format')
 
             # Convert the first record of `header_rec` into a dictionary
